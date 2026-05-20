@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "portfolio_final_hrd_ready.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/portfolio_final_hrd_ready.html"
+    },
+    {
+      "src": "/(.*\\.(jpeg|jpg|png|gif|svg|css|js))",
+      "dest": "/$1"
+    }
+  ]
+}
